@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/home/student/local/jdk-17.0.1+12/lib"/>
-    <property name="sun.java.command" value="/home/student/Desktop/hello-world/target/surefire/surefirebooter-20250428085613916_3.jar /home/student/Desktop/hello-world/target/surefire 2025-04-28T08-56-13_863-jvmRun1 surefire-20250428085613916_1tmp surefire_0-20250428085613916_2tmp"/>
+    <property name="sun.java.command" value="/home/student/Desktop/hello-world/target/surefire/surefirebooter-20250507082919544_3.jar /home/student/Desktop/hello-world/target/surefire 2025-05-07T08-29-19_494-jvmRun1 surefire-20250507082919544_1tmp surefire_0-20250507082919544_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/student/Desktop/hello-world/target/test-classes:/home/student/Desktop/hello-world/target/classes:/home/student/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,12 +27,12 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/student/Desktop/hello-world/target/surefire/surefirebooter-20250428085613916_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/student/Desktop/hello-world/target/surefire/surefirebooter-20250507082919544_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.1+12"/>
     <property name="user.name" value="student"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="6.8.0-57-generic"/>
+    <property name="os.version" value="6.8.0-58-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
