@@ -1,0 +1,16 @@
+---
+- name: Basic Server Setup (Without Sudo)
+  hosts: local
+  tasks:
+	- name: Create a directory for development
+  	file:
+    	path: "{{ ansible_env.HOME }}/dev"
+    	state: directory
+    	mode: '0755'
+
+	- name: Create a text file with content
+  	copy:
+    	content: |
+      	This is a test file created by Ansible.
+    	dest: "{{ ansible_env.HOME }}/test_file.txt"
+    	mode: '0644'
