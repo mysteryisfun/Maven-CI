@@ -14,3 +14,48 @@
       	This is a test file created by Ansible.
     	dest: "{{ ansible_env.HOME }}/test_file.txt"
     	mode: '0644'
+
+pipeline {
+	agent any
+
+	stages {
+    	stage('Checkout') {
+        	steps {
+            	// Explicitly checkout code from a Git repository
+            	git url: 'https://github.com/yourusername/projectname.git', branch: 'main'
+        	}
+    	}
+    	stage('Build') {
+steps {
+// Run Maven build
+sh 'mvn clean package'
+}
+}
+stage('Test') {
+steps {
+// Optionally, separate test execution if needed
+sh 'mvn test'
+}
+}
+
+    	stage('Compile') {
+        	steps {
+            	// Compile the Java program using javac
+            	sh 'javac src/main/java/com/example/App.java'
+        	}
+    	}
+
+    	stage('Run') {
+        	steps {
+            	// Run the Java program using the java command with the fully qualified class name
+            	sh 'java -cp src/main/java com.example.App'
+        	}
+    	}
+	}
+
+	post {
+    	always {
+        	echo 'Cleaning up resources or sending notifications.'
+    	}
+	}
+}
